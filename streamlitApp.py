@@ -148,7 +148,7 @@ if st.button("🔍 Predict Failure"):
 
     probability = failure_model.predict_proba(df)[0][1]
 
-    threshold = 0.3
+    threshold = 0.4
 
     prediction = 1 if probability >= threshold else 0
 
